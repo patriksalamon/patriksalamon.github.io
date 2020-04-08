@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Máp kalkulátor</title>
+    <style>
+      #loading, #results{
+        display: none;
+      }
+    </style>
+  </head>
+  <body class="bg-light">
+
+    <nav class="navbar navbar-dark bg-primary mb-3">
+      <div class="container">
+          <a href="#" class="navbar-brand">MÁP Plusz Kalkulátor</a>
+      </div>
+    </nav>
+      <div class="container">
+          <div class="row justify-content-center">
+           <!-- Info -->
+           <div class="col-md-6 col-sm-8">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Információk</h5>
+              <p>A Magyar Állampapír Plusz 5 éves futamidővel kibocsátásra kerülő, dematerializált, sávos, fix kamatozású lakossági állampapír, amelynek alapcímlete 1 forint.</p>
+              <p class="badge badge-info">A kamat mértéke:</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">az első félévben évi 3,5%</li>
+              <li class="list-group-item">a második félévben évi 4,0%</li>
+              <li class="list-group-item">2. évben évi 4,5%</li>
+              <li class="list-group-item">3. évben évi 5,0%</li>
+              <li class="list-group-item">4. évben évi 5,5%</li>
+              <li class="list-group-item">5. évben évi 6,0%</li>
+            </ul>
+            <div class="card-body">
+              <p>További hivatalos információ: <a href="https://www.allampapir.hu/" class="card-link badge badge-dark" >Magyar Állampapír hivatalos oldala</a></p>
+              <a href="#" class="card-link"></a>
+            </div>
+          </div>
+          </div>
+              <!-- Calculator -->            
+              <div class="col-md-6 col-sm-12 " id="calculator"> 
+                  <div class="card card-body text-center mt-5" id="calculator-after">
+                      <h2 class="heading display-5 pb-3">MÁP Plusz kalkulátor</h2>
+                        <form id="loan-form">
+                          <div class="input-group mb-3">
+                            <input id="amount" type="number" min="1" class="form-control" placeholder="Összeg" aria-label="Username" aria-describedby="basic-addon1">
+                            <div class="input-group-append">
+                              <span class="input-group-text" id="basic-addon2">Ft</span>
+                            </div>
+                          </div>
+                              <div class="input-group mb-3">
+                                <input id="years" max="5" type="number" class="form-control" placeholder="Évek száma" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                <div class="input-group-append">
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <input type="submit" value="Számítás" class="btn btn-dark btn-block">
+                              </div>
+                        </form>
+                       <!-- Loader -->
+                        <div id="loading">
+                           <img src="img/loading.gif" alt="">
+                        </div>
+                       <!-- Results -->
+                       <div id="results" class="pt-4"> 
+                       <h5>Eredmények</h5>
+                       <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text">Havi hozam (Ft)</span>
+                        </div>
+                        <input id="monthly-interest" disabled type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+                      </div>                                    
+                        <div class="input-group mb-3">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text">Teljes hozam (Ft)</span>
+                          </div>
+                          <input id="interest" disabled type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>  
+                            <div class="input-group mb-3">
+                              <div class="input-group-prepend">
+                                <span class="input-group-text">Felvehető összeg (Ft)</span>
+                              </div>
+                              <input id="total-interest" disabled type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+                            </div>
+                          </div>
+                        </div>  
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <footer class="mt-5 p-3 text-center bg-light">
+            MÁP Plusz kalkulátor 2020 &copy;
+            <p>Az oldalon lévő számítások nem hivatalosak, kizárólag tájékoztató jellegűek.</p>
+        </footer>
+      </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
