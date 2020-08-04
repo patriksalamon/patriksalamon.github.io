@@ -105,7 +105,7 @@ h2:after {
 /*--- TABLES ---*/
 
 table{
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
     margin-top: 30px;
     background-color:#fff;
@@ -179,18 +179,17 @@ table tr:hover{
 /*--- LINKS ---*/
 
 a:link,a:visited{
-    color:#2196F3;
     text-decoration: none;
     padding-bottom: 1px;
-    border-bottom: 1px solid #2196F3;
-    -webkit-transition: border-bottom 0.2s, color 0.2s;
-    transition: border-bottom 0.2s, color 0.2s;
+    /*border-bottom: 1px solid #2196F3;*/
+    /* -webkit-transition: border-bottom 0.2s, color 0.2s; */
+    /* transition: border-bottom 0.2s, color 0.2s; */
 }
 
 a:hover,a:active{
-    color:#555;
-    border-bottom: 1px solid transparent;
-}
+    color:#fff;
+    /* border-bottom: 1px solid transparent;*/
+} 
 
 /*--- BUTTONS ---*/
 .btn:link,
@@ -330,12 +329,12 @@ margin: 10px 0;
     background-color: #f6f6f6;
 }
 
-.about{
+.center{
     width: 100%;
     text-align: center;
 }
 
-.about img {
+.center img {
     height: 100px;
     width: 100px;
     border-radius: 50%;
