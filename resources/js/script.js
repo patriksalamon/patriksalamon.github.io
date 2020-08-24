@@ -88,24 +88,18 @@ $(document).ready(function() {
 
 function dataToTable(){
   // load courses data to table from JSON 
-  
+
   var xmlhttp = new XMLHttpRequest();
   var url = "/resources/json/courses.json";
   
   xmlhttp.onreadystatechange = function() {
   
   if (this.readyState == 4 && this.status == 200) {
+
       var courses = JSON.parse(this.responseText);
-  
-      var out = "";
       var i;
       const table = document.getElementById("table-courses");
-  
-      var columns = [];
-      for(var key in courses[0]){
-        columns.push(key);
-      }
-  
+
       for(i = 0; i < courses.length; i++) {
   
         tr = table.insertRow(-1);
