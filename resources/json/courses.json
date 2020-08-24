@@ -1,0 +1,44 @@
+[
+{
+        "platform" : "Udemy",
+        "title" : "Modern JavaScript From The Beginning",
+        "url" : "https://www.udemy.com/title/modern-javascript-from-the-beginning/",
+        "date" : 2020
+},
+{
+    "platform" : "Udemy",
+    "title" : "Build Responsive Real World Websites with HTML5 and CSS3",
+    "url" : "https://www.udemy.com/title/design-and-develop-a-killer-website-with-html5-and-css3/",
+    "date" : 2020
+},
+{
+    "platform" : "Udemy",
+    "title" : "Entity Framework in Depth",
+    "url" : "https://www.udemy.com/title/entity-framework-tutorial/",
+    "date" : 2019
+},
+{
+    "platform" : "Pluralsight",
+    "title" : "Creating Modern WPF Apps with MahApps.Metro",
+    "url" : "https://www.pluralsight.com/courses/mahappsdotmetro-creating-modern-wpf-apps",
+    "date" : 2019
+},
+{
+    "platform" : "Udemy",
+    "title" : "C# Developers - Learn the Art of Writing Clean Code",
+    "url" : "https://www.udemy.com/title/clean-code/",
+    "date" : 2019
+},
+{
+    "platform" : "Udemy",
+    "title" : "C# Developers - Double Your Coding Speed with Visual Studio",
+    "url" : "https://www.udemy.com/title/visual-studio-tips-tricks/",
+    "date" : 2019
+},
+{
+    "platform" : "Udemy",
+    "title" : "Xamarin Forms Build Native Cross-platform Apps with C#",
+    "url" : "https://www.udemy.com/title/xamarin-forms-title/",
+    "date" : 2019
+}
+]

@@ -134,9 +134,17 @@ th {
     color: #2196F3;
 }
 
-table tr:hover{
+tr:hover{
     color: #fff;
     background-color: rgba(33, 149, 243, 0.75);
+}
+
+table a{
+    color: #333;
+}
+
+table a:hover{
+    color: #fff;
 }
 
 /*--- PARAGRAPHS ---*/
