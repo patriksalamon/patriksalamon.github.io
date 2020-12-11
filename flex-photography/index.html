@@ -5,28 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
-   
-
+    <script src="https://kit.fontawesome.com/4f027b5fa7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/flex-photography/style.css">
     <title>Flex Photography</title>
 </head>
 <body>
 
-
 <div class="flex-container">
 
     <!-- Navigation sidebar-->
     <div class="sidebar">
-        <h1>Flex Photography</h1>
-        <ul>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">About me</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+        <div class="sidebar-container">
+            <div class="header">
+                <h1>Flex <i class="fas fa-camera-retro"></i> <br>Photography</h1>
+            </div>
+            <div class="nav-list">
+            <ul>
+                <li><a href="#gallery">Portfolio</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
     </div>
 
     <!-- Main area -->
     <div class="main">
+        <div id="gallery"></div>
         <div class="flex-gallery page-one">
             <img src="img/img1.jpg">
             <img src="img/img2.jpg">
@@ -63,14 +68,14 @@
 
     <div class="pagination">
         <a href="#">&laquo;</a>
-        <a href="#" class="active">1</a>
-        <a href="#">2</a>
-        <a href="#">3</a>
+        <a id="page-one" href="#" class="active">1</a>
+        <a id="page-two" href="#">2</a>
+        <a id="page-three" href="#">3</a>
         <a href="#">&raquo;</a>
     </div>
 
     <!-- About -->
-    <section class="about">
+    <section id="about">
         <h1>About me</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat sit amet nisi sodales lacinia. Duis non gravida dolor. Morbi a velit a risus tincidunt imperdiet non tincidunt tellus. 
         Morbi in maximus nibh. Sed fermentum luctus turpis quis hendrerit. Vestibulum eget massa justo. Praesent pulvinar venenatis sem quis suscipit. Quisque vel tortor tincidunt, blandit tortor in, laoreet diam. Nulla ac neque erat. Donec ultricies eros eget fringilla tempus.
@@ -107,6 +112,7 @@
 
     <section class="gear">
         <h1>Camera Gear</h1>
+        
         <div class="gear-container">
             <div>
                 <img src="img/m100.jpg" alt="">
@@ -114,9 +120,9 @@
             <div>
                 <h3>Canon EOS M100</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat sit amet nisi sodales lacinia. Duis non gravida dolor. Morbi a velit a risus tincidunt imperdiet non tincidunt tellus. 
-                    Morbi in maximus nibh. Sed fermentum luctus turpis quis hendrerit. Vestibulum eget massa justo. Praesent pulvinar venenatis sem quis suscipit. Quisque vel tortor tincidunt, blandit tortor in, laoreet diam. Nulla ac neque erat. Donec ultricies eros eget fringilla tempus.
+                    Praesent pulvinar venenatis sem quis suscipit. Quisque vel tortor tincidunt, blandit tortor in, laoreet diam. Nulla ac neque erat. Donec ultricies eros eget fringilla tempus.
                 </p>
-                <a href="index.html">Official site</a>
+                <a href="https://www.canon.hu/cameras/eos-m100/">Go to official site <span>&#8618;</span></a>
             </div>
         </div>
 
@@ -126,25 +132,54 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat sit amet nisi sodales lacinia. Duis non gravida dolor. Morbi a velit a risus tincidunt imperdiet non tincidunt tellus. 
                     Morbi in maximus nibh. Sed fermentum luctus turpis quis hendrerit. Vestibulum eget massa justo. Praesent pulvinar venenatis sem quis suscipit. Quisque vel tortor tincidunt, blandit tortor in, laoreet diam. Nulla ac neque erat. Donec ultricies eros eget fringilla tempus.
                 </p>
-                <a href="index.html">Official site</a>
+                <a href="http://www.yongnuo.eu/lens/">Go to official site <span>&#8618;</span></a>
             </div>
             <div>
                 <img src="img/yongnuo.jpg" alt="">
-            </div>
+            </div>           
+        </div>
+        
+    </section>
+
+    <section id="contact">
+        <div class="contact-container">
+        <h1>Contact me</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat sit amet nisi sodales lacinia. Duis non gravida dolor. Morbi a velit a risus tincidunt imperdiet non tincidunt tellus. 
+            Morbi in maximus nibh. Sed fermentum luctus turpis quis hendrerit. 
+        </p> 
+            <form>
+                <input type="text" name="name" id="name" placeholder="Your name" required>
+                <input type="email" name="email" id="email" placeholder="Your email adress" required>
+                <textarea name="message" id="message" placeholder="Your message"></textarea>
+                <a href="#" class="form-btn" id="btn-form">Send Message</a>
+            </form>
         </div>
     </section>
 
-    <section class="contact">
-        <h1>Contact</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat sit amet nisi sodales lacinia. Duis non gravida dolor. Morbi a velit a risus tincidunt imperdiet non tincidunt tellus. 
-            Morbi in maximus nibh. Sed fermentum luctus turpis quis hendrerit. Vestibulum eget massa justo. Praesent pulvinar venenatis sem quis suscipit. Quisque vel tortor tincidunt, blandit tortor in, laoreet diam. Nulla ac neque erat. Donec ultricies eros eget fringilla tempus.
-        </p>
-    </section>
-
-        <footer> Copyright &copy; 2020 by Patrik Salamon. All rights reserved. <a href="patriksalamon.github.io">patriksalamon.github.io</a></footer>
+        <footer>
+            <div>
+                <p> &copy; 2020 by Patrik Salamon. All rights reserved. 
+                    <a href="https://patriksalamon.github.io/">patriksalamon.github.io</a>
+                </p>
+                <p>All images &copy; 2020 Patrik Salamon</p>
+            </div>
+            <div class="icons">
+                <a href="https://www.linkedin.com/in/patrik-salamon" title="Visit my LinkedIn profile." target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.flickr.com/people/189675806@N05/" title="Visit my flickr profile." target="_blank">
+                    <i class="fab fa-flickr"></i>
+                </a>
+                <a href="https://github.com/patriksalamon" title="Visit my GitHub profile." target="_blank">
+                <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </footer>
     </div>
-
+    
 </div>
+
+<script src="/flex-photography/script.js"></script>
 
 </body>
 </html>
