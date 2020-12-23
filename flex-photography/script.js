@@ -1,20 +1,23 @@
 window.onload = (event) => {
 
-var list = new Array('page-one', 'page-two', 'page-three');
-
+/* Pagination */
 document.querySelector(".pagination").addEventListener("click", function(event){
 
     if(event.target.nodeName === 'A'){
-        var s = event.target.text;
-        var id = event.target.id;
+        const s = event.target.text;
+        let id = event.target.id;
 
-        var page = document.getElementById(id);
-        var pages = document.querySelectorAll('.pagination');
-        
+        if(s === '«') id = 'page-one';
+        if(s === '»') id = 'page-three';
 
-        var p1 = document.querySelector('.flex-gallery.page-one');
-        var p2 = document.querySelector('.flex-gallery.page-two');
-        var p3 = document.querySelector('.flex-gallery.page-three');
+        let page = document.getElementById(id);
+        let pages = document.querySelectorAll('.pagination a');  
+
+        let p1 = document.querySelector('.flex-gallery.page-one');
+        let p2 = document.querySelector('.flex-gallery.page-two');
+        let p3 = document.querySelector('.flex-gallery.page-three');
+
+        pages.forEach(item => item.classList.remove('active'));
 
         if(s === '1'){
             p1.style.display = 'flex';
