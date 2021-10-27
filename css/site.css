@@ -1,0 +1,132 @@
+:root{
+    --site-color: #6B76FF;
+}
+
+body{
+    font-family:  'Roboto', sans-serif;
+    color: #595959;
+    font-size: .9em;
+}
+
+a{text-decoration: none;}
+
+h2,h3,p{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+h4{letter-spacing: .1em;}
+
+.container{padding: 1rem;}
+
+.current{
+    background-color: #ffff;
+    padding: .3rem;
+    border-radius: .5rem;
+    color: var(--site-color);
+    margin-right: .5rem;
+}
+
+.material-icons, h3{color: #404040;}
+
+.material-icons{margin-right: 0.7rem;}
+
+.person{
+    background-color: #e5e7e9;
+    margin: .7rem;
+}
+
+.person h1{
+    font-size: 2.5em;
+    letter-spacing: .2em;
+    font-weight: 100;
+}
+
+.skills, .details{border-bottom: 0.1rem solid #ffff;}
+
+.skills{padding-bottom: 1rem;}
+
+.skill{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+
+.skill-box{
+    margin-right:.3em;
+    padding-right:4.5rem;
+    font-size: 0.6em;
+    border-radius: 1rem;
+    background-color: #ffff;
+    color:#ffff;
+    box-shadow: .1rem .1rem 0.3rem rgba(0,0,0,0.2);
+}
+
+.fill{
+    background-color: var(--site-color);
+    color: var(--site-color);
+}
+
+.image-container{position: relative;}
+
+.image-container h1{
+    position: absolute;
+    bottom:0%;
+    left: 5%;
+    color: #ffff;
+}
+
+.work{
+    background-image: linear-gradient(45deg, #e5e7e9, #f0f0f0);
+    flex-basis: 50%;
+    margin: .7rem .7rem .7rem 0;
+}
+
+.work h1{
+    background: linear-gradient(to right, var(--site-color) 0%, #313abe 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.work-item:not(:last-of-type){
+    border-bottom: 0.1rem solid #ffff;
+}
+
+.education{
+    background-image: linear-gradient(45deg, #737373, #999999);
+    color: #ffff;
+    flex-basis: 50%;
+    margin: 0 .7rem .7rem 0;
+}
+
+.education h1{
+    background: linear-gradient(to right, #ffffff 0%, #8f8f8f 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.education div:not(:last-of-type){border-bottom: 0.1rem solid #999999;}
+
+
+footer{
+    background-color: var(--site-color);
+    color: #ffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+i{
+    color: #f4f3f3;
+    font-size: 1.5em;
+    padding: 0 .5rem 0 .5rem;
+    transition:color .5s;
+    cursor: pointer;
+}
+
+.fa-flickr:hover{color:#ff0084;}
+
+.fa-linkedin:hover{color:#0077b5;}
+
+.fa-github:hover{color: #6e5494;}

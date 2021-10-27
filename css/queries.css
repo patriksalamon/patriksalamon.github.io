@@ -1,0 +1,16 @@
+@media screen and (max-width: 767px)
+{
+    body .flex-container {
+        flex-flow: column;
+    }
+    .person, body .work, body .skill, body .education, body .project, body .other {
+        margin: 0;
+        margin-bottom: .7rem;
+    }
+    body .education{
+        margin: 0;
+    }
+    img{
+        width: 100%;
+    }
+}

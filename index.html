@@ -1,228 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This site shows the path of my Developer journey.">
-      
-    <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
-    <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
-    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
-    <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&display=swap" rel="stylesheet">
-    <title>PS</title>
-
+    <title>Patrik Salamon</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;1,300;1,500&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,300;0,600;1,300;1,600&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4f027b5fa7.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="css/flex.css" rel="stylesheet" />
+    <link href="css/site.css" rel="stylesheet" />
+    <link href="css/queries.css" rel="stylesheet" />
 </head>
-    <body>
-        <header>
-            <nav>
-                <div class="row">
-                    <ul class="main-nav js--main-nav">
-                        <li><a href="#about">About me</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#courses">Courses</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#section-contact">Contact</a></li>
-                    </ul>
-                    <a class="mobile-nav js--nav-icon"><ion-icon name="menu-outline" id="nav-icon"></ion-icon></a>
-                </div>
-            </nav>
-            <div class="hero-text-box">
-                <h1>Hello World!<br>This is my website</h1>
-                <a class="btn btn-full nav" href="#section-contact">Send me a message</a>
-                <a class="btn btn-ghost nav" href="#about">Show me more</a>
-            </div>
-        </header>
 
-        <section class="section-about" id="about">
-            <div class="row">
-                <h2>About me</h2>
+<body>
+    <div class="flex-container">
+        <div class="person flex-container-column animate__animated animate__fadeIn">
+            <div class="image-container">
+                <img src="css/profilepic.jpg">
+                <h1>Patrik Salamon</h1>
             </div>
-            <div class="row">
-                <div class="col span-1-of-1 center">
-                    <img src="resources/css/img/profile-picture.png" alt="My profile picture">
-                    <p>My name is Patrik Salamon. 24 years old. Software developer from Hungary.</p>
+            <div class="container">
+                <div class="details">
+                    <p><span class="material-icons">badge</span>Software Developer</p>
+                    <p><span class="material-icons">apartment</span>Gyöngyös, Hungary</p>
+                    <p><span class="material-icons">email</span>patriksalamon95@gmail.com</p>
+                    <p><span class="material-icons">phone_android</span>+36 30 456 7404</p>
                 </div>
-            </div>
-        </section>
-
-        <section class="section-skills" id="skills">
-            <div class="row">
-                <h2>Skills</h2>
-                <p class="long-copy">
-                    I studied software development in University, but most of my knowledge got from online courses, and work experiences.
-                </p>
-            </div>
-            <div class="row js--wp-1">
-                <div class="col span-1-of-3 box skills">
-                    <ion-icon name="desktop-outline" class="icon-big"></ion-icon>
-                    <h3>C#</h3>
-                    <p>
-                       Currently I am working as a C# developer. I am developing WPF and WinForms applications.
-                    </p>
-                </div>
-                <div class="col span-1-of-3 box skills">
-                    <ion-icon name="analytics-outline" class="icon-big"></ion-icon>
-                    <h3>Database</h3>
-                    <p>
-                        I am experienced with basic SQL Statements and Procedural SQL in T-SQL. 
-                    </p>
-                </div>
-                <div class="col span-1-of-3 box skills">
-                    <ion-icon name="code-slash-outline" class="icon-big"></ion-icon>
-                    <h3>WEB Development</h3>
-                    <p>
-                        I started my path with frontend development, without frameworks. First I learned CSS3 and HTML5 and Javascript.
-                    </p>
-                </div>
-            </div>
-        </section>
-        <!-- COURSES -->
-        <section id="courses">
-            <div class="row">
-                <h2>Courses</h2>
-                <p class="center"><ion-icon name="checkmark-outline" class="icon-small"></ion-icon>Some course what I have completed.</p>
-            </div>
-            <div class="row">
-                <table id="table-courses">
-                    <tr>
-                        <th>Platform</th>
-                        <th>Course</th>
-                        <th>Date</th>
-                    </tr>
-                </table>
-            </div>
-        </section>
-        <!-- PROJECTS -->
-        <section class="section-image" id="image">
-            <div class="row">
-                <h2>Projects</h2>
-            </div>
-        </section>
-        <section class="section-projects" id="projects">
-            <div class="row">
-                <div class="col span-1-of-2">
-                    <div class="project-box js--wp-4">
-                        <div>
-                            <img src="resources/css/img/mapcalculator.jpg" alt="Avatar">
-                            <h3>MÁP Plusz Calculator</h3>
-                            <p class="text-highlight-justify">I made a small Hungarian state bond calculator application with JavaScript. I am created the UI with Bootstrap.</p>
-                        </div>
-                        <div>
-                            <ul>
-                                <li><ion-icon name="logo-javascript" class="icon-small"></ion-icon>Javascript</li>
-                                <li><ion-icon name="logo-html5" class="icon-small"></ion-icon>HTML 5</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <p class="projects-tools">Used tools</p>
-                            <ul>
-                                <li><ion-icon name="logo-css3" class="icon-small"></ion-icon>Bootstrap 4</li>                    
-                            </ul>
-                        </div>
-                        <div>
-                            <a href="map_calculator/index.html" target="_blank" class="btn btn-full">Check it out</a>
-                        </div>
+                <div class="skills animate__animated animate__zoomIn">
+                    <h3><span class="material-icons">code</span>Skills</h3>
+                    <p>C#</p>
+                    <div class="skill">
+                        <div class="skill-box fill">.</div>
+                        <div class="skill-box fill">.</div>
+                        <div class="skill-box fill">.</div>
+                        <div class="skill-box">.</div>
+                        <div class="skill-box">.</div>
+                    </div>
+                    <p>.NET 5</p>
+                    <div class="skill">
+                        <div class="skill-box fill">.</div>
+                        <div class="skill-box fill">.</div>
+                        <div class="skill-box">.</div>
+                        <div class="skill-box">.</div>
+                        <div class="skill-box">.</div>
+                    </div>
+                    <p>SQL</p>
+                    <div class="skill">
+                        <div class="skill-box fill">.</div>
+                        <div class="skill-box fill">.</div>
+                        <div class="skill-box fill">.</div>
+                        <div class="skill-box">.</div>
+                        <div class="skill-box">.</div>
+                    </div>
+                    <p>Javascript, JQuery</p>
+                    <div class="skill">
+                        <div class="skill-box fill">.</div>
+                        <div class="skill-box fill">.</div>
+                        <div class="skill-box fill">.</div>
+                        <div class="skill-box">.</div>
+                        <div class="skill-box">.</div>
+                    </div>
+                    <p>HTML5</p>
+                    <div class="skill">
+                        <div class="skill-box fill">.</div>
+                        <div class="skill-box fill">.</div>
+                        <div class="skill-box fill">.</div>
+                        <div class="skill-box fill">.</div>
+                        <div class="skill-box">.</div>
+                    </div>
+                    <p>CSS3</p>
+                    <div class="skill">
+                        <div class="skill-box fill">.</div>
+                        <div class="skill-box fill">.</div>
+                        <div class="skill-box fill">.</div>
+                        <div class="skill-box">.</div>
+                        <div class="skill-box">.</div>
                     </div>
                 </div>
-                    <div class="col span-1-of-2">
-                        <div class="project-box">
-                            <div>
-                                <img src="resources/css/img/mywebsite.jpg" alt="Avatar">
-                                <h3>My Website</h3>
-                                <p class="text-highlight-justify">My website created by learning purpose. I interested in web design and development.</p>
-                            </div>
-                            <div>
-                                <ul>
-                                    <li><ion-icon name="logo-javascript" class="icon-small"></ion-icon>JQuery</li>
-                                    <li><ion-icon name="logo-css3" class="icon-small"></ion-icon>CSS3</li>
-                                    <li><ion-icon name="logo-html5" class="icon-small"></ion-icon>HTML5</li>       
-                                </ul>
-                            </div>
-                            <div>
-                                <p class="projects-tools">Used tools</p>
-                                <ul>
-                                    <li><ion-icon name="logo-css3" class="icon-small"></ion-icon>ION Icons</li>
-                                    <li><ion-icon name="logo-javascript" class="icon-small"></ion-icon>Waypoints</li>
-                                    <li><ion-icon name="logo-css3" class="icon-small"></ion-icon>Normalize.css</li>
-                                    <li><ion-icon name="logo-css3" class="icon-small"></ion-icon>Responsive Grid System</li>
-                                </ul>
-                            </div>
-                            <div></div>
-                        </div>
-                    </div>
+                <div>
+                    <h3><span class="material-icons">language</span>Language</h3>
+                    <p>Hungarian (Native)</p>
+                    <p>English B2 Level</p>
+                </div>
             </div>
-        </section>
-
-
-        <section id="section-contact">
-            <div class="row">
-                <h2>Send me a message</h2>
+        </div>
+        <div class="flex-container-column">
+            <div class="work container">
+                <h1 class="animate__animated animate__bounceIn"><span class="material-icons">work</span>Work Experience</h1>
+                <div class="work-item">
+                    <h4>Rosenberger Magyarország Kft, Jászárokszállás</h4>
+                    <p><span class="material-icons">date_range</span>Apr 2019 - <span class="current">Current</span></p>
+                    <h4>Software Developer</h4>
+                    <p>Enterprise software development.</p>
+                    <p>Technologies used: C#, WinForms, WPF, .NET5, Microsoft SQL Server, HTML3, CSS5, Javascript,
+                        JQuery, GitLab</p>
+                </div>
+                <div class="work-item">
+                    <h4>Robert BOSCH Elektronikai Kft, Hatvan</h4>
+                    <p><span class="material-icons">date_range</span>Jun 2017 - Marc 2019</p>
+                    <h4>IT Intern</h4>
+                    <p>General IT tasks (installation, service, network) and software development in ASP.NET MVC</p>
+                </div>
             </div>
-            <div class="row"> 
-                <form class="contact-form">
-                    <div class="row">
-                        </div>
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <label>Name</label>
-                        </div>
-                        <div class="col span-2-of-3">
-                            <input type="text" name="name" id="name" placeholder="Your name" required>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <label for="name">Email</label>
-                        </div>
-                        <div class="col span-2-of-3">
-                            <input type="email" name="email" id="email" placeholder="Your email adress" required>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <label>Drop me a line</label>
-                        </div>
-                        <div class="col span-2-of-3">
-                            <textarea name="message" placeholder="Your message"></textarea>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <label>&nbsp;</label>
-                        </div>
-                        <div class="col span-2-of-3">
-                            <a href="#btn-form" class="btn btn-ghost" id="btn-form">Send it!</a>
-                        </div>
-                    </div>
-                </form>
+            <div class="education container animate__animated animate__jackInTheBox">
+                <h1><span class="material-icons">school</span>Education</h1>
+                <div>
+                    <h4>Courses</h4>
+                    <p><span class="current">Current</span>Udemy, Pluralsight, W3Schools.com, Css-tricks.com</p>
+                </div>
+                <div>
+                    <h4>Eszterházy Károly Egyetem, Eger</h4>
+                    <p><span class="material-icons">date_range</span>2020</p>
+                    <p>Generative Software Information Technology Assistant</p>
+                </div>
+                <div>
+                    <h4>Eszterházy Károly Egyetem, Gyöngyös</h4>
+                    <p><span class="material-icons">date_range</span>2018</p>
+                    <p>Business Information Technologist Assistant</p>
+                </div>
+            </div>
         </div>
     </div>
-</section>
-        <footer>
-            <div class="row">
-                <div class="col span-1-of-2">
-                    <ul class="footer-nav">
-                        <li><a href="#about">About</a></li>
-                    </ul>
-                </div>
-                <div class="col span-1-of-2">
-                    <ul class="social-links">
-                        <li><a href="https://hu.linkedin.com/in/patrik-salamon?trk=people-guest_people_search-card" target="_blank"><ion-icon name="logo-linkedin" class="linkedin"></ion-icon></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row">
-                <p>Copyright &copy; 2020 by Patrik Salamon. All rights reserved</p>
-            </div>
-        </footer>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
-        <script src="vendors/js/jquery.waypoints.min.js"></script>
-        <script src="resources/js/script.js"></script>
-    </body>
+    <footer>
+        <p>Find me on social media</p>
+        <div>
+            <a href="https://www.flickr.com/people/189675806@N05/" title="Visit my Flickr profile." target="_blank">
+                <i class="fab fa-flickr"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/patrik-salamon" title="Visit my LinkedIn profile." target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/patriksalamon" title="Visit my GitHub profile." target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+        <p>Copyright &copy; 2021 Patrik Salamon </p>
+    </footer>
+    <script src="/js/index.js"></script>
+</body>
+
 </html>

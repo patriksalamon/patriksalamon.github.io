@@ -1,0 +1,25 @@
+body{
+    margin:0;
+}
+
+.flex-container{
+    background-color: #F4F3F3;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+.flex-container-row,
+.flex-container-column{
+    display: flex;
+}
+
+.flex-container-row{
+    flex-direction: row wrap;
+    justify-content: center;
+}
+
+.flex-container-column{
+    flex-direction: column;
+}
