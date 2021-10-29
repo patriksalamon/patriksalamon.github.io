@@ -3,7 +3,6 @@ body{
 }
 
 .flex-container{
-    background-color: #F4F3F3;
     min-height: 100vh;
     display: flex;
     flex-flow: row;

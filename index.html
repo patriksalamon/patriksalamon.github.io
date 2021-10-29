@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="css/flex.css" rel="stylesheet" />
     <link href="css/site.css" rel="stylesheet" />
+    <link href="css/light-theme.css" rel="stylesheet" id="theme-link"/>
     <link href="css/queries.css" rel="stylesheet" />
 </head>
 
@@ -24,10 +25,12 @@
     <div class="flex-container">
         <div class="person flex-container-column animate__animated animate__fadeIn">
             <div class="image-container">
-                <img src="css/profilepic.jpg">
-                <h1>Patrik Salamon</h1>
+                <img src="css/cover.jpg">
+                <img id="profile-picture" src="css/profilepicture.jpg">
+
             </div>
             <div class="container">
+                <h1>Patrik Salamon</h1>
                 <div class="details">
                     <p><span class="material-icons">badge</span>Software Developer</p>
                     <p><span class="material-icons">apartment</span>Gyöngyös, Hungary</p>
@@ -131,6 +134,8 @@
     </div>
 
     <footer>
+        <div class="sides"></div>
+        <div class="copyright">
         <p>Find me on social media</p>
         <div>
             <a href="https://www.flickr.com/people/189675806@N05/" title="Visit my Flickr profile." target="_blank">
@@ -144,6 +149,13 @@
             </a>
         </div>
         <p>Copyright &copy; 2021 Patrik Salamon </p>
+    </div>
+    <div class="sides">
+        <div class="theme-switch">
+            <p>Switch theme</p>
+            <i id="btn-theme"  class="fas fa-moon animate__animated"></i>
+        </div>
+    </div>
     </footer>
     <script src="/js/index.js"></script>
 </body>
